@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Pavo Webpage Title</title>
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+        <div class="container">
+            <!-- Image Logo -->
+            <div class="container">
+                <form id="google-form" onsubmit="return sendForm();">
+                    <div class="form-group">
+                        <label for="sdt">Số Điện Thoại Của Bạn:</label>
+                        <input type="sdt" class="form-control" id="sdt" name="Số Điện thoại">
+                    </div>
+                    <label for="fullname">Cấu hình bạn muốn mua:</label>
+            <div class="select">
+          <select type="text" class="form-control" id="name" name="cấu hình">
+            <option value="Cấu hình 1">Cấu hình 1</option>
+            <option value="Cấu hình 2">Cấu hình 2</option>
+            <option value="Cấu hình 3">Cấu hình 3</option>
+            <option value="Cấu hình Dragon">Cấu hình Dragon</option>
+            <option value="Cần tư vấn thêm hãy gọi cho tôi">Cần tư vấn thêm hãy gọi cho tôi</option>
+          </select>
+          <span class="focus"></span>
+        </div>
+        
+                    <div class="form-group">
+                        <label>Địa chỉ cụ thể:</label>
+                        <input type="text" class="form-control" id="message" name="địa chỉ">
+                    </div>
+                    <button type="submit" class="btn btn-default" id="submit-form">ĐẶT HÀNG</button>
+                </form>
+            </div>
+            
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <div class="wrapper">
+            <div class="content">
+              <div class="bg-shape">
+                <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405214/starwars/logo.png" alt="">
+              </div>                 
+              <img class="khuyenmai" src="http://www.khuyenmaihcmc.vn/img/notfound.jpg" alt="">
+                  <div class="product-img">
+                        <div class="product-img__item" id="img1">
+                          <img src="images/22.png" alt="star wars" class="product-img__img">
+                        </div>
+                  
+                        <div class="product-img__item" id="img2">
+                          <img src="images/33.png" alt="star wars" class="product-img__img">
+                        </div>
+                  
+                        <div class="product-img__item" id="img3">
+                          <img src="images/44.png" alt="star wars" class="product-img__img">
+                        </div>
+                  
+                        <div class="product-img__item" id="img4">
+                          <img src="images/1.png" alt="star wars" class="product-img__img">
+                        </div>
+                  
+                  
+                      </div>
+                  
+                  
+                  
+                      <div class="product-slider">
+                        <button class="prev disabled">
+                          <span class="icon">
+                            <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-left"></use></svg>
+                          </span>
+                        </button>
+                        <button class="next">
+                          <span class="icon">
+                            <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+                          </span>
+                        </button>
+                  
+                        <div class="product-slider__wrp swiper-wrapper">
+                          <div class="product-slider__item swiper-slide" data-target="img4">
+                            <div class="product-slider__card">
+                              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405223/starwars/item-4-bg.jpg" alt="star wars" class="product-slider__cover">
+                              <div class="product-slider__content">
+                                <h1 class="product-slider__title">
+                                  <br>
+                                  Câu hình 1
+                                </h1>
+                                <span class="product-slider__price">6.800.000<sup>đ</sup></span>
+                                <div class="product-ctr">
+                                  <div class="product-labels">
+                                    <div class="product-labels__title">Chi tiết</div>
+                  
+                                    <div class="product-labels__group">
+                                      <label class="product-labels__item">
+                                        <input type="radio" class="product-labels__checkbox" name="type5" >
+                                        <span class="product-labels__txt">Cpu L6540</span>
+                                      </label>
+                  
+                                      <label class="product-labels__item">
+                                        <input type="radio" class="product-labels__checkbox" name="type5" checked>
+                                        <span class="product-labels__txt">Ram 16Gb</span>
+                                      </label>
+                  
+                                      <label class="product-labels__item">
+                                        <input type="radio" class="product-labels__checkbox" name="type5" >
+                                        <span class="product-labels__txt">ssd 128G</span>
+                                      </label>
+                  
+                                      <label class="product-labels__item">
+                                        <input type="radio" class="product-labels__checkbox" name="type5" >
+                                        <span class="product-labels__txt">Vga GTX750</span>
+                                      </label>        
+                                               
+                                    </div>
+                                   
+                                  </div>
+                                  <div class="product-labels">
+                                    <div class="product-labels__title">Tặng kèm</div>
+                  
+                                    <img style="width: 180px;" src="images/free.png" alt="">
+                                   
+                                  </div>
+                                  <span class="hr-vertical"></span>
+                                  <span class="product-inf__title">Linh kiện mới</span>
+                                  <div class="product-inf">
+                                    <div class="product-inf__percent">
+                                      <div class="product-inf__percent-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                                          <defs>
+                                            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                              <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0" />
+                                              <stop offset="100%" stop-color="#cb2240" stop-opacity="1" />
+                                            </linearGradient>
+                                          </defs>
+                                          <circle cx="50" cy="50" r="47" stroke-dasharray="350, 309" stroke="#cb2240" stroke-width="4" fill="none"/>
+                                        </svg>
+                                      </div>
+                                      <div class="product-inf__percent-txt">
+                                        100%
+                                      </div>
+                                    </div>
+                                    <button class="product-slider__fav js-fav"><span class="heart"></span> Bao hành 3 năm 1 đôi 1</button>
+                                  </div>
+                                </div>
+                                <a href="https://m.me/giaphatcomputer.page">
+                                  <div class="product-slider__bottom">
+                                    <button class="product-slider__cart">
+                                        MUA NGAY
+                                      </button>
+                                      </a>              
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="product-slider__item swiper-slide" data-target="img1">
+                            <div class="product-slider__card">
+                              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405222/starwars/item-1-bg.jpg" alt="star wars" class="product-slider__cover">
+                              <div class="product-slider__content">
+                                <h1 class="product-slider__title">
+                                   <br> Câu hình 2
+                                </h1>
+                                <span class="product-slider__price">7.900.000<sup>đ</sup></span>
+                                <div class="product-ctr">
+                                  <div class="product-labels">
+                                    <div class="product-labels__title">Chi tiết</div>
+                  
+                                    <div class="product-labels__group">
+                                        <label class="product-labels__item">
+                                          <input type="radio" class="product-labels__checkbox" name="type5" >
+                                          <span class="product-labels__txt">Cpu X5670</span>
+                                        </label>
+                    
+                                        <label class="product-labels__item">
+                                          <input type="radio" class="product-labels__checkbox" name="type5" checked>
+                                          <span class="product-labels__txt">Ram 32Gb</span>
+                                        </label>
+                    
+                                        <label class="product-labels__item">
+                                          <input type="radio" class="product-labels__checkbox" name="type5" >
+                                          <span class="product-labels__txt">ssd 128G</span>
+                                        </label>
+                    
+                                        <label class="product-labels__item">
+                                          <input type="radio" class="product-labels__checkbox" name="type5" >
+                                          <span class="product-labels__txt">Vga GTX750</span>
+                                        </label>                   
+                                      </div>                    
+                                    </div>
+                                    <div class="product-labels">
+                                        <div class="product-labels__title">Tặng kèm</div>
+                      
+                                        <img style="width: 180px;" src="images/free.png" alt="">
+                                       
+                                      </div>
+                                    <span class="hr-vertical"></span>
+                                    <span class="product-inf__title">Linh kiện mới</span>
+                                    <div class="product-inf">
+                                      <div class="product-inf__percent">
+                                        <div class="product-inf__percent-circle">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                                            <defs>
+                                              <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0" />
+                                                <stop offset="100%" stop-color="#cb2240" stop-opacity="1" />
+                                              </linearGradient>
+                                            </defs>
+                                            <circle cx="50" cy="50" r="47" stroke-dasharray="350, 309" stroke="#cb2240" stroke-width="4" fill="none"/>
+                                          </svg>
+                                        </div>
+                                        <div class="product-inf__percent-txt">
+                                          100%
+                                        </div>
+                                      </div>
+                    
+                                      <button class="product-slider__fav js-fav"><span class="heart"></span> Bao hành 3 năm 1 đôi 1</button>
+                                    
+                                    </div>
+                    
+                                  </div>
+                                  <a href="https://m.me/giaphatcomputer.page">
+                                    <div class="product-slider__bottom">
+                                      <button class="product-slider__cart">
+                                          MUA NGAY
+                                        </button>
+                                        </a>    
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  
+                          <div class="product-slider__item swiper-slide" data-target="img2">
+                            <div class="product-slider__card">
+                              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405222/starwars/item-2-bg.jpg" alt="star wars" class="product-slider__cover">
+                              <div class="product-slider__content">
+                                <h1 class="product-slider__title">
+                                  Câu hình 3 <br>
+                                </h1>
+                                <span class="product-slider__price">10.500.000<sup>đ</sup></span>
+                                <div class="product-ctr">
+                                  <div class="product-labels">
+                                    <div class="product-labels__title">Chi tiết</div>
+                  
+                                    <div class="product-labels__group">
+                                        <label class="product-labels__item">
+                                          <input type="radio" class="product-labels__checkbox" name="type5" >
+                                          <span class="product-labels__txt">Cpu E5.2689</span>
+                                        </label>
+                    
+                                        <label class="product-labels__item">
+                                          <input type="radio" class="product-labels__checkbox" name="type5" checked>
+                                          <span class="product-labels__txt">Ram 32Gb</span>
+                                        </label>
+                    
+                                        <label class="product-labels__item">
+                                          <input type="radio" class="product-labels__checkbox" name="type5" >
+                                          <span class="product-labels__txt">ssd 256GB</span>
+                                        </label>
+                    
+                                        <label class="product-labels__item">
+                                          <input type="radio" class="product-labels__checkbox" name="type5" >
+                                          <span class="product-labels__txt">Vga GTX1050</span>
+                                        </label>                   
+                                      </div>                    
+                                    </div>
+                                    <div class="product-labels">
+                                        <div class="product-labels__title">Tặng kèm</div>
+                      
+                                        <img style="width: 180px;" src="images/free.png" alt="">
+                                       
+                                      </div>
+                                    <span class="hr-vertical"></span>
+                                    <span class="product-inf__title">Linh kiện mới</span>
+                                    <div class="product-inf">
+                                      <div class="product-inf__percent">
+                                        <div class="product-inf__percent-circle">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                                            <defs>
+                                              <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0" />
+                                                <stop offset="100%" stop-color="#cb2240" stop-opacity="1" />
+                                              </linearGradient>
+                                            </defs>
+                                            <circle cx="50" cy="50" r="47" stroke-dasharray="350, 309" stroke="#cb2240" stroke-width="4" fill="none"/>
+                                          </svg>
+                                        </div>
+                                        <div class="product-inf__percent-txt">
+                                          100%
+                                        </div>
+                                      </div>
+                    
+                                      <button class="product-slider__fav js-fav"><span class="heart"></span> Bao hành 4 năm 1 đôi 1</button>
+                                    
+                                    </div>
+                    
+                                  </div>
+                                  <a href="https://m.me/giaphatcomputer.page">
+                                    <div class="product-slider__bottom">
+                                      <button class="product-slider__cart">
+                                          MUA NGAY
+                                        </button>
+                                        </a>    
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  
+                          <div class="product-slider__item swiper-slide" data-target="img3">
+                            <div class="product-slider__card">
+                              <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1536405215/starwars/item-3-bg.jpg" alt="star wars" class="product-slider__cover">
+                              <div class="product-slider__content">
+                                <h1 class="product-slider__title">
+                                  <br>
+                                  DRAGON
+                                </h1>
+                                <span class="product-slider__price">12.000.000<sup>Đ</sup></span>
+                                <div class="product-ctr">
+                                  <div class="product-labels">
+                                    <div class="product-labels__title">Chi tiết</div>
+                  
+                                    <div class="product-labels__group">
+                                        <label class="product-labels__item">
+                                          <input type="radio" class="product-labels__checkbox" name="type5" >
+                                          <span class="product-labels__txt">Cpu L5640</span>
+                                        </label>
+                    
+                                        <label class="product-labels__item">
+                                          <input type="radio" class="product-labels__checkbox" name="type5" checked>
+                                          <span class="product-labels__txt">Ram 16Gb</span>
+                                        </label>
+                    
+                                        <label class="product-labels__item">
+                                          <input type="radio" class="product-labels__checkbox" name="type5" >
+                                          <span class="product-labels__txt">ssd 128GB</span>
+                                        </label>
+                    
+                                        <label class="product-labels__item">
+                                          <input type="radio" class="product-labels__checkbox" name="type5" >
+                                          <span class="product-labels__txt">Vga GTX750</span>
+                                        </label>                   
+                                      </div>                    
+                                    </div>
+                                    <div class="product-labels">
+                                        <div class="product-labels__title">Tặng kèm</div>
+                      
+                                        <img style="width: 180px;" src="images/free.png" alt="">
+                                       
+                                      </div>
+                                    <span class="hr-vertical"></span>
+                                    <span class="product-inf__title">Linh kiện mới</span>
+                                    <div class="product-inf">
+                                      <div class="product-inf__percent">
+                                        <div class="product-inf__percent-circle">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                                            <defs>
+                                              <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0" />
+                                                <stop offset="100%" stop-color="#cb2240" stop-opacity="1" />
+                                              </linearGradient>
+                                            </defs>
+                                            <circle cx="50" cy="50" r="47" stroke-dasharray="350, 309" stroke="#cb2240" stroke-width="4" fill="none"/>
+                                          </svg>
+                                        </div>
+                                        <div class="product-inf__percent-txt">
+                                          100%
+                                        </div>
+                                      </div>
+                    
+                                      <button class="product-slider__fav js-fav"><span class="heart"></span> Bao hành 3 năm 1 đôi 1</button>
+                                    
+                                    </div>
+                    
+                                  </div>
+                    
+                                  <a href="https://m.me/giaphatcomputer.page">
+                                <div class="product-slider__bottom">
+                                  <button class="product-slider__cart">
+                                      MUA NGAY
+                                    </button>
+                                    </a>
+                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                  
+                        </div>
+                      </div>
+                  
+                    </div>
+                  
+                   
+                  
+                  </div>
+                  <svg class="hidden" hidden>
+                    <symbol id="icon-arrow-left" viewBox="0 0 32 32">
+                      <path d="M0.704 17.696l9.856 9.856c0.896 0.896 2.432 0.896 3.328 0s0.896-2.432 0-3.328l-5.792-5.856h21.568c1.312 0 2.368-1.056 2.368-2.368s-1.056-2.368-2.368-2.368h-21.568l5.824-5.824c0.896-0.896 0.896-2.432 0-3.328-0.48-0.48-1.088-0.704-1.696-0.704s-1.216 0.224-1.696 0.704l-9.824 9.824c-0.448 0.448-0.704 1.056-0.704 1.696s0.224 1.248 0.704 1.696z"></path>
+                    </symbol>
+                    <symbol id="icon-arrow-right" viewBox="0 0 32 32">
+                      <path d="M31.296 14.336l-9.888-9.888c-0.896-0.896-2.432-0.896-3.328 0s-0.896 2.432 0 3.328l5.824 5.856h-21.536c-1.312 0-2.368 1.056-2.368 2.368s1.056 2.368 2.368 2.368h21.568l-5.856 5.824c-0.896 0.896-0.896 2.432 0 3.328 0.48 0.48 1.088 0.704 1.696 0.704s1.216-0.224 1.696-0.704l9.824-9.824c0.448-0.448 0.704-1.056 0.704-1.696s-0.224-1.248-0.704-1.664z"></path>
+                    </symbol>
+                  </svg>
+                  <!-- partial -->
+                    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+                  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script><script  src="./script.js"></script>             
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+    <!-- Features -->
+    <div id="features" class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/features-icon-1.svg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">bẢO HÀNH</h5>
+                            <p>Bảo hành 4 năm 1 đổi 1</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/features-icon-2.svg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Vận chuyển</h5>
+                            <p>Miễn phí giao hàng toàn quốc - giao hàng tận nhà</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->            
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/features-icon-5.svg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Lịch làm việc</h5>
+                            <p>tất cả các ngày trong tuần</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/features-icon-6.svg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Hỗ trợ</h5>
+                            <p>Cài win - cài đặt phần mềm online miễn phí</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of features -->
+    <!-- Details 3 -->
+    <div class="basic-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="text-container">
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="https://media.giphy.com/media/MDPvAlXlwewKYmLSi0/giphy.gif" alt="alternative">
+                        <img class="img-fluid" src="https://media.giphy.com/media/yDp1eKmv834rxQGVfd/giphy.gif" alt="alternative">
+
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-4 -->
+    <!-- end of details 3 -->
+    <body>
+      <div class="container">
+        <div class="col-md-12" id="fbcomment">
+          <div class="header_comment">
+            <div class="row">
+              <div class="col-md-6 text-left">
+              </div>
+            </div>
+          </div>
+            <div class="row">
+              <ul id="list_comment" class="col-md-12">
+                <!-- Start List Comment 1 -->
+                <li class="box_result row">
+                  <div class="avatar_comment col-md-1">
+                    <img src="./images/fb1.jpg" alt="avatar"/>
+                  </div>
+                  <div class="result_comment col-md-11">
+                    <h4>Hoàng Minh</h4>
+                    <p>Chú đáo máy xịn quá</p>
+                    <div class="tools_comment">
+                      <a class="like" href="#">Thích</a>
+                      <span aria-hidden="true"> · </span>
+                      <a class="replay" href="#">Phản hồi</a>
+                      <span aria-hidden="true"> · </span>
+                      <i class="fa fa-thumbs-o-up"></i> <span class="count"></span> 
+                      <span aria-hidden="true">  </span>
+                      <span>1 giờ</span>
+                    </div>
+                    
+                  </div>
+                </li>
+                
+                <!-- Start List Comment 2 -->
+                <li class="box_result row">
+                  <div class="avatar_comment col-md-1">
+                    <img src="./images/fb2.jpg" alt="avatar"/>
+                  </div>
+                  <div class="result_comment col-md-11">
+                    <h4>Hiếu Nguyễn</h4>
+                    <p>Tư vấn nhiệt tình</p>
+                    <div class="tools_comment">
+                      <a class="like" href="#">Thích</a>
+                      <span aria-hidden="true"> · </span>
+                      <a class="replay" href="#">Phản hồi</a>
+                      <span aria-hidden="true"> · </span>
+                      <i class="fa fa-thumbs-o-up"></i> <span class="count"></span> 
+                      <span aria-hidden="true">  </span>
+                      <span>26 phút</span>
+                    </div>
+                    <ul class="child_replay"></ul>
+                  </div>
+                </li>
+                <li class="box_result row">
+                  <div class="avatar_comment col-md-1">
+                    <img src="./images/fb3.jpg" alt="avatar"/>
+                  </div>
+                  <div class="result_comment col-md-11">
+                    <h4>Phạm Lợi</h4>
+                    <p>Có tiền sẽ mua ngay</p>
+                    <div class="tools_comment">
+                      <a class="like" href="#">Thích</a>
+                      <span aria-hidden="true"> · </span>
+                      <a class="replay" href="#">Phản hồi</a>
+                      <span aria-hidden="true"> · </span>
+                      <i class="fa fa-thumbs-o-up"></i> <span class="count"></span> 
+                      <span aria-hidden="true">  </span>
+                      <span>16 phút</span>
+                    </div>
+                    <ul class="child_replay"></ul>
+                  </div>
+                </li>
+              </ul>
+              <div class="load-wrapp">
+                <div class="load-6">
+                  <div class="letter-holder">
+                    <div class="l-1 letter">L</div>
+                    <div class="l-2 letter">o</div>
+                    <div class="l-3 letter">a</div>
+                    <div class="l-4 letter">d</div>
+                    <div class="l-5 letter">i</div>
+                    <div class="l-6 letter">n</div>
+                    <div class="l-7 letter">g</div>
+                    <div class="l-8 letter">.</div>
+                    <div class="l-9 letter">.</div>
+                    <div class="l-10 letter">.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Statistics -->
+    <div class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Counter -->
+                    <div id="counter">                   
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="211">1</div>
+                            <p class="counter-info">Đơn hàng đã được đặt</p>
+                        </div>
+                        
+                    </div>
+                    <!-- end of counter -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of counter -->
+    <!-- end of statistics -->
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="social-container">
+                        <span class="fa-stack">
+                            <a href="https://www.facebook.com/giaphatcomputer.page">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.youtube.com/c/FunnyMixiTV">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-youtube fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled li-space-lg p-small">
+                        <li><a href="article.html">Article Details</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <p class="p-small statement">Copyright © <a href="#your-link">Your name</a></p>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    <div class="scroll-to-tp">
+        <a href="https://www.facebook.com/giaphatcomputer.page"><i style="display: block; width: 40px; height: 40px;font-size: 44px;color: teal; " class="fa fa-facebook-official"></i></a>
+    </div>
+    <div class="scroll-to-tp1">
+        <a href="tel:+084969607024"><i style="display: block; width: 40px; height: 40px;font-size: 44px;color: teal; " class="fa fa-facebook-official"></i></a>
+    </div>
+    <div class="scroll-to-tp2">
+        <a href="https://m.me/giaphatcomputer.page"><i style="display: block; width: 40px; height: 40px;font-size: 44px;color: teal; " class="fa fa-facebook-official"></i></a>
+    </div>
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src='https://cdn.rawgit.com/vuejs/vue/v1.0.24/dist/vue.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js'></script><script  src="./js/scripts.js"></script>
+</body>
+</html>
